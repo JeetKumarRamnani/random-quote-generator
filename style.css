@@ -1,0 +1,105 @@
+* {
+    margin    : 0;
+    padding   : 0;
+    box-sizing: border-box;
+}
+
+#container {
+    background-color: #b09e99;
+    width           : 100%;
+    height          : 100vh;
+    /*   display    :flex;
+    justify-content : center;
+    align-items     :center; */
+    text-align      : center;
+}
+
+h1 {
+    font-family: impact;
+    text-shadow: 1px 1px 3px rgba(256, 0, 0, 0.5);
+}
+
+#child-container {
+    background-color: #d8cfcc;
+    width           : 40%;
+    height          : 50%;
+    min-height      : 180px;
+
+    /*   display:flex;
+    align-items:center;
+    justify-content:center; */
+    position  : relative;
+    box-shadow: 1px 2px 4px 10px rgba(0, 256, 0, 0.3);
+    margin    : 0 auto;
+}
+
+#author {
+    font-size  : 1rem;
+    text-align : right;
+    position   : relative;
+    right      : 20px;
+    color      : blue;
+    font-style : italic;
+    font-weight: bold;
+}
+
+#quote {
+    margin-top : 20px;
+    font-family: impact;
+    font-size  : 20px;
+    text-align : center;
+    color      : #6c757d;
+}
+
+#my-btn {
+    position        : absolute;
+    bottom          : 30px;
+    right           : 50%;
+    width           : 30%;
+    padding         : 10px 30px;
+    background-color: #64b6ac;
+    color           : white;
+    border          : none;
+    font-family     : sans-serif;
+    /*   font-size  : ; */
+    box-shadow      : 1px 2px 3px 5px rgba(0, 0, 256, 0.5);
+    margin-right    : -12%;
+    cursor          : pointer;
+    margin-top      : 10px;
+}
+
+#my-btn:active {
+    transform: translatey(5px);
+}
+
+#my-btn:hover {
+    box-shadow: 1px 2px 3px 5px rgba(256, 0, 0, 0.5);
+}
+
+@media (max-width: 768px) {
+    #container {
+        width : 90%;
+        height: 80vh;
+    }
+
+    #child-container {
+        width : 90%;
+        height: 60%;
+        margin: 0 auto;
+    }
+
+    #author {
+        font-size: 14px;
+    }
+
+    #quote {
+        font-size: 18px;
+    }
+
+    #my-btn {
+        width       : 50%;
+        padding     : 8px 20px;
+        margin-right: -25%;
+        font-size   : 12px;
+    }
+}
